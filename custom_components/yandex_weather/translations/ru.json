@@ -1,0 +1,35 @@
+{
+  "title": "Яндекс Погода",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Яндекс Погода",
+        "data": {
+          "api_key": "Ключ к API",
+          "name": "Имя записи",
+          "latitude": "Широта",
+          "longitude": "Долгота"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Запись для этих координат уже сформирована"
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "title": "Яндекс Погода",
+        "data": {
+          "api_key": "Ключ к API",
+          "name": "Имя записи",
+          "latitude": "Широта",
+          "longitude": "Долгота"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Запись для этих координат уже сформирована"
+    }
+  }
+}

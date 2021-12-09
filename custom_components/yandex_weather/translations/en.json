@@ -1,0 +1,35 @@
+{
+  "title": "Yandex Weather",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Yandex Weather",
+        "data": {
+          "api_key": "API key",
+          "name": "Entry name",
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Entry for these coordinates is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "user": {
+        "title": "Yandex Weather",
+        "data": {
+          "api_key": "API key",
+          "name": "Entry name",
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Entry for these coordinates is already configured"
+    }
+  }
+}
