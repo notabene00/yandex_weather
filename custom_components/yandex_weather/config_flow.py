@@ -49,8 +49,8 @@ class OptionsFlowHandler(OptionsFlow):
         SCHEMA = Schema({
             Required(CONF_NAME, default=self.config[CONF_NAME]): str,
             Required(CONF_API_KEY, default=self.config[CONF_API_KEY]): str,
-            Optional(CONF_LATITUDE, default=self.config[CONF_LATITUDE]): str,
-            Optional(CONF_LONGITUDE, default=self.config[CONF_LONGITUDE]): str
+            Optional(CONF_LATITUDE, default=self.config[CONF_LATITUDE]): float,
+            Optional(CONF_LONGITUDE, default=self.config[CONF_LONGITUDE]): float
         })
         return self.async_show_form(
             step_id="user", data_schema=SCHEMA, errors=errors
