@@ -4,7 +4,7 @@
   "config_flow": true,
   "name": "Yandex Weather",
   "documentation": "https://github.com/notabene00/yandex_weather",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "dependencies": [],
   "codeowners": [
     "@bastshoes",

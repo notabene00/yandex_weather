@@ -44,13 +44,16 @@ class OptionsFlowHandler(OptionsFlow):
 
     async def async_step_init(self, user_input={}, errors={}):
         """Manage the options."""
+        return await self.async_step_user(user_input, errors)
+
+    async def async_step_user(self, user_input={}, errors={}):
         if user_input:
             return self.async_create_entry(title=self.config[CONF_NAME], data=user_input)
         SCHEMA = Schema({
             Required(CONF_NAME, default=self.config[CONF_NAME]): str,
             Required(CONF_API_KEY, default=self.config[CONF_API_KEY]): str,
-            Optional(CONF_LATITUDE, default=self.config[CONF_LATITUDE]): float,
-            Optional(CONF_LONGITUDE, default=self.config[CONF_LONGITUDE]): float
+            Optional(CONF_LATITUDE, default=self.config[CONF_LATITUDE]): str,
+            Optional(CONF_LONGITUDE, default=self.config[CONF_LONGITUDE]): str
         })
         return self.async_show_form(
             step_id="user", data_schema=SCHEMA, errors=errors
